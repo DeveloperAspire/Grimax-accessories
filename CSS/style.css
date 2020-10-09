@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,300&display=swap');
+
+*{
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+/* CUSTOM VARIABLES */
+:root{
+  --blue-color:#1580AD;
+  
+
+}
+
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  margin:0;
+  padding:0;
+}
+/* HEADER AND NAVIGATION */
+header{
+  display:flex;
+  position: relative;
+  justify-content: space-between;
+  background: var(--blue-color);
+  color:white;
+}
+
+header .head-text{
+  margin:0 1rem;
+  font-size: 22px;
+}
+header nav{
+  margin:0;
+  padding:0;
+}
+header ul{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-between;
+  margin: 1rem 1rem;
+  padding:0;
+}
+header li{
+  margin:1rem 1rem;
+
+}
+header li a{
+  text-decoration: none;
+  display:inline-block;
+  color:white;
+  padding:0.2rem;
+  font-size: 22px;
+  border: 2px solid var(--blue-color);
+  line-height: 1;
+  letter-spacing: 1;
+  transition: all 1s;
+}
+header li a:hover{
+  color:white;
+  padding:0.2rem;
+  border-bottom: 2px solid white;
+}
+
+.mobile-nav{
+  display:none;
+}
+.mobile-icon{
+  display:none;
+}
+
+/* WELCOME SECTION */
+.welcome{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding:2rem;
+  width:97%;
+  grid-gap:20px;
+  margin:5rem auto;
+}
+.welcome-text{
+  width:500px;
+  line-height: 1.5;
+  padding:1rem;
+}
+.welcome-text h1{
+  font-size:40px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.welcome-text p{
+  font-size:22px;
+  font-weight: 300;
+}
+ .welcome img{
+  height:100%;
+  width:100%;
+  border-radius:1rem;
+}
+.welcome-text .btn{
+  text-decoration: none;
+  font-size: 28px;
+  width:50%;
+  color:white;
+  padding:1rem;
+  background:var(--blue-color);
+  transition: all 1s;
+}
+.welcome-text .btn:hover{
+  color: var(--blue-color);
+  background: white;
+  border:2px solid var(--blue-color);
+}
+
+/* MORE INFORMATION SECTION */
+.more-info{
+  height:100%;
+  padding-left:2rem;
+  margin: 2rem 0;
+}
+.head-text{
+  font-size:27px;
+  margin:1rem 0 2rem 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+.head-text h1{
+  padding:0.5rem;
+  display: inline-block;
+  border-bottom: 5px solid var(--blue-color);
+}
+.gridder{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+.first-gridder{
+  line-height: 1.5;
+  padding:1rem;
+}
+.first-gridder h2{
+  font-size:40px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.first-gridder p{
+  font-size:22px;
+}
+ .first-gridder .btn{
+  text-decoration: none;
+  font-size: 28px;
+  display: inline-block;
+  color:white;
+  padding:1rem;
+  background:var(--blue-color);
+  transition: all 1s;
+}
+.first-gridder .btn:hover{
+  color: var(--blue-color);
+  background: white;
+  border:2px solid var(--blue-color);
+} 
+.more-info img{
+  height:400px;
+  width:100%;
+  border-radius:1rem;
+}
+
+/* CUSTOMER REVIEW */
+
+.customer{
+  padding:2rem;
+  margin: 2rem 0;
+}
+.customer{
+  padding:2rem;
+  text-align: center;
+}
+ .customer img{
+   height:100px;
+   border-radius: 50%;
+   border:2px solid var(--blue-color);
+}
+.grid-cus{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+
+
+/* ACCESSORIES PAGE */
+
+.shopping{
+  margin:3rem 0;
+}
+.shopping-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  grid-gap: 0.5rem;
+}
+.shopping-card{
+  width:80%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  margin:2rem;
+  height:600px;
+  overflow:hidden;
+}
+.shopping-card img{
+  height:300px;
+  width:100%;
+}
+.shopping-text{
+  padding:1rem;
+  text-align: center;
+}
+.shopping-text .btn{
+  text-decoration: none;
+  padding:0.5rem;
+  font-size: 19px;
+  display: inline-block;
+  width:40%;
+  color:white;
+  border: 2px solid white;
+  background:var(--blue-color);
+  transition: all 1s;
+}
+.shopping-text .btn:hover{
+  color: var(--blue-color);
+  background: white;
+  border:2px solid var(--blue-color);
+} 
+
+/* ABOUT US PAGE */
+
+.about-us{
+  padding:1rem;
+  margin:2rem 0;
+
+}
+.about-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4rem;
+}
+.aboutcard{
+  text-align: start;
+  font-size:19px;
+}
+.aboutcard i{
+  color: var(--blue-color);
+  margin:0 0.2rem;
+}
+.img-grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.img-grid img{
+  height:400px;
+  width:100%;
+}
+
+
+/* CONTACT PAGE */
+
+.contact-us{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5rem;
+  margin:2rem 0;
+}
+
+.contact-text{
+  padding:1rem;
+}
+.contact-text h2{
+  padding:0.5rem;
+  margin: 0.2rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  border-bottom: 2px solid var(--blue-color);
+}
+.contact-text p{
+line-height: 1.8;
+font-size: 18.5px;
+letter-spacing: 1.2;
+}
+
+
+.error{
+  background: orangered;
+  color:#fff;
+  font-size: 22px;
+  padding: 10px;
+  margin:5px;
+}
+
+form{
+  padding:2rem;
+}
+form input, textarea , button{
+  display:block;
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  padding:1rem;
+  margin:1.2rem;
+  border:none;
+  border: 1px solid #ccc;
+  font-size: 1.5rem;
+}
+
+form .btn{
+  text-decoration: none;
+  padding:1.2rem;
+  display: inline-block;
+  color:white;
+  width:30%;
+  border:2px solid white;
+  background:var(--blue-color);
+  transition: all 1s;
+}
+form .btn:hover{
+  color: var(--blue-color);
+  background: white;
+  border:2px solid var(--blue-color);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+  background: var(--blue-color);
+  color:white;
+
+}
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap:1rem;
+}
+.back-up{
+  padding:2rem;
+  text-align: start;
+}
+.back-up h2{
+  font-size: 30px;
+}
+.back-up i{
+  margin:5px;
+}
+.back-up p{
+  font-size:19px ;
+  line-height:1.5;
+}
+.back-up ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+}
+.back-up a{
+  display:inline-block;
+  font-size:19px ;
+  color:white;
+  padding:0.5rem;
+  text-decoration: none;
+  border-bottom:2px solid white;
+}
+.designer{
+  text-align: center;
+  width:50%;
+  margin:1rem auto;
+  font-size: 19px;
+}
+.designer a{
+  text-decoration: none;
+  display:inline-block;
+  color:white;
+  margin-top:1px;
+  border-bottom: 2px solid white;
+
+}
+
+
+
+
+/* MOBILE VERSION FOR DIFFERENT SCREENS */
+
+@media(max-width:800px){
+
+
+/* Home */
+.welcome{
+  display:grid;
+  grid-template-columns: 100%;
+  padding:2rem;
+  width:100%;
+  grid-gap:20px;
+  border:1px solid red;
+}
+.welcome-text{
+  width:100%;
+  line-height: 1.5;
+  padding:1rem;
+}
+
+.welcome img{
+  height:500px;
+  width:100%;
+  border-radius:1rem;
+}
+
+/* More information section */
+.gridder{
+  display: grid;
+  grid-template-columns:  1fr ;
+}
+   /* Footer */
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:1rem;
+  }
+  .back-up{
+    padding:2rem;
+    text-align: start;
+  }
+  .back-up h2{
+    font-size: 25px;
+  }
+  .back-up a{
+    display:inline-block;
+    margin:5px;
+    font-size:16px ;
+    color:white;
+    padding:0.5rem;
+    text-decoration: none;
+    border-bottom:2px solid white;
+  }
+ /* Contact */
+
+ .contact-us{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.contact-text{
+  padding:1rem;
+}
+.contact-text h2{
+  padding:0.5rem;
+  margin: 0.2rem;
+  font-size: 1.2rem;
+
+}
+.contact-text p{
+font-size: 16px;
+}
+form input, textarea , button{
+  border: 1px solid #ccc;
+  width:90%;
+  font-size: 16px;
+}
+form{
+  padding:0;
+}
+
+
+/* Accessories */
+.shopping-container{
+  display:grid;
+  grid-template-columns: 80%;
+  text-align: center;
+  justify-content: center;
+  padding:0;
+}
+.shopping-card{
+  width:100%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  height:600px;
+  overflow:hidden;
+}
+.shopping-card img{
+  height:300px;
+  width:100%;
+}
+.shopping-text{
+  padding:1rem;
+  text-align: center;
+}
+.head-text{
+  font-size:20px;
+}
+
+/* About */
+
+.about-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+.aboutcard{
+  text-align: start;
+  font-size:19px;
+}
+.img-grid{
+display: grid;
+grid-template-columns: 1fr ;
+}
+.img-grid img{
+  height:500px;
+  width:100%;
+}
+
+}
