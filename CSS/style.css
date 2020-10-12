@@ -61,12 +61,39 @@ header li a:hover{
   border-bottom: 2px solid white;
 }
 
+/* Mobile Navigation Hamburger menu */
 .mobile-nav{
-  display:none;
+  background:var(--blue-color);
+  color:white;
+  height:100vh;
+  width:100%;
+  z-index:2;
+  position:absolute;
+  top:0;
+  left:0;
+  transform: translateX(-900px);
 }
-.mobile-icon{
-  display:none;
+.mobile-nav ul{
+  margin:20rem auto;
+  text-align: center;
+  list-style-type: none;
 }
+
+.mobile-nav li{
+  margin:1rem 1rem;
+
+}
+.mobile-nav li a{
+  text-decoration: none;
+  display:inline-block;
+  color:white;
+  padding:0.2rem;
+  font-size: 40px;
+  border: 2px solid var(--blue-color);
+  line-height: 1;
+  letter-spacing: 1;
+}
+
 
 /* WELCOME SECTION */
 .welcome{
@@ -395,7 +422,56 @@ footer{
 /* MOBILE VERSION FOR DIFFERENT SCREENS */
 
 @media(max-width:800px){
+/* Hamburger Menu */
 
+.mobile-nav{
+  transform: translateX(-800px)
+}
+
+/* Animation for mobile menu */
+.mobile-nav-in{
+  background:var(--blue-color);
+  color:white;
+  height:100vh;
+  width:100%;
+  z-index:2;
+  position:absolute;
+  top:0;
+  left:0;
+  animation: slidein 1s ease-in forwards;
+  
+}
+
+.mobile-nav-out{
+  background:var(--blue-color);
+  color:white;
+  height:100vh;
+  width:100%;
+  z-index:2;
+  position:absolute;
+  top:0;
+  left:0;
+  animation: slideout 1s linear forwards;
+  
+}
+
+
+@keyframes slidein {
+  0%{transform:translateX(-800px);}
+  100%{transform: translateX(0);}
+} 
+
+@keyframes slideout{
+  0%{transform:translateX(0);}
+  100%{transform: translateX(-800px);}
+} 
+
+
+/* Remove Desktop nav */
+
+header ul{
+  display:none;
+}
 
 /* Home */
 .welcome{
@@ -404,7 +480,6 @@ footer{
   padding:2rem;
   width:100%;
   grid-gap:20px;
-  border:1px solid red;
 }
 .welcome-text{
   width:100%;
