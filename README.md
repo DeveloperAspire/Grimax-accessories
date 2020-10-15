@@ -13,7 +13,7 @@ The project contains four pages which are:
 
 1. Homepage- Welcomes Sites visitors with sweet messages.
 
-2. Accessories- This conains all the available products which are digital accessories in stock, pictures, price and brief convincing words for customers to make choice and add
+2. Accessories- This contains all the available products which are digital accessories in stock, pictures, price and brief convincing words for customers to make choice and add
 products to cart.
 
 3. About - This page contains some imfo about the hotel, features and services they offer and some of their mentions by famous brands.

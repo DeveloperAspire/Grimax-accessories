@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
 *{
   overflow-x: hidden;
@@ -16,6 +16,7 @@ body{
   font-family: 'Josefin Sans', sans-serif;
   margin:0;
   padding:0;
+  font-weight:300;
 }
 /* HEADER AND NAVIGATION */
 header{
