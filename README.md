@@ -26,4 +26,4 @@ Fonts Used
 * Fall back fonts is : sans serif
  
 
-Live Url = https://https://grimax.vercel.app/
+Live Url = https://grimax.vercel.app/
